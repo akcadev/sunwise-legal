@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SunWise — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6f6f8; --panel: #ffffff; --text: #1a1a1e; --muted: #5a5a66;
+    --line: #e4e4ea; --accent: #d98a00; --link: #b56f00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0c0f; --panel: #16161b; --text: #ececf1; --muted: #a0a0ad;
+      --line: #26262e; --accent: #ffb000; --link: #ffc74d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 96px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.01em; }
+  .dot { width: 22px; height: 22px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #ffd76a, var(--accent)); flex: none; }
+  h1 { font-size: 28px; letter-spacing: -0.02em; margin: 18px 0 6px; }
+  h2 { font-size: 20px; letter-spacing: -0.01em; margin: 40px 0 10px; }
+  h3 { font-size: 16px; margin: 24px 0 6px; }
+  p, li { color: var(--text); }
+  .muted, .meta { color: var(--muted); }
+  .meta { font-size: 14px; }
+  a { color: var(--link); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: var(--panel); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; font-size: 13px; }
+  .callout {
+    background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: 10px; padding: 14px 16px; margin: 18px 0;
+  }
+  .toc { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 8px 18px; margin: 24px 0; }
+  .toc ol { margin: 8px 0; padding-left: 20px; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14px; display: block; overflow-x: auto; }
+  th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="dot"></span> SunWise</div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 16 July 2026 &nbsp;·&nbsp; Effective: 16 July 2026</p>
+
+  <div class="callout">
+    <strong>The short version.</strong> SunWise has no accounts and no login. Almost everything —
+    your skin-tone scans, tan-journal photos, and Apple Health data — stays on your iPhone. We collect
+    anonymous usage and crash diagnostics to keep the app working, and we use Apple, Google Firebase,
+    RevenueCat, and Superwall as service providers. We never sell your data, and we never use your
+    Apple Health data for advertising.
+  </div>
+
+  <div class="toc">
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#collect">What we collect</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#health">Apple Health (HealthKit)</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#camera">Camera &amp; photos</a></li>
+      <li><a href="#sharing">Who we share with</a></li>
+      <li><a href="#retention">Retention</a></li>
+      <li><a href="#rights">Your choices &amp; rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#security">Security &amp; transfers</a></li>
+      <li><a href="#changes">Changes &amp; contact</a></li>
+    </ol>
+  </div>
+
+  <h2 id="who">1. Who we are</h2>
+  <p>SunWise (“SunWise”, “we”, “us”) is an iOS application that helps you track UV exposure, plan safe
+  sun sessions, and estimate vitamin D synthesis. This policy explains what data the app handles and why.
+  SunWise is operated by <strong>[LEGAL / DEVELOPER NAME]</strong>. For anything in this policy, contact us
+  at <a href="mailto:akca.dev@gmail.com">akca.dev@gmail.com</a>.</p>
+  <p>SunWise does <strong>not</strong> require you to create an account. We do not ask for your name,
+  email, or phone number to use the app.</p>
+
+  <h2 id="collect">2. What we collect</h2>
+  <table>
+    <tr><th>Category</th><th>Examples</th><th>Where it lives</th></tr>
+    <tr>
+      <td>Profile you set up</td>
+      <td>Your skin tone (Monk scale), tanning goals, obstacles, and chosen location during onboarding</td>
+      <td>On your device</td>
+    </tr>
+    <tr>
+      <td>Skin-tone scans</td>
+      <td>Camera frames analyzed to estimate your skin tone</td>
+      <td>Analyzed on your device; not uploaded unless you opt in (see §6)</td>
+    </tr>
+    <tr>
+      <td>Tan-journal photos</td>
+      <td>Progress photos you choose to attach</td>
+      <td>On your device; not uploaded unless you opt in</td>
+    </tr>
+    <tr>
+      <td>Session &amp; health data</td>
+      <td>Sun-session records, UV exposure, vitamin&nbsp;D estimates, time-in-daylight</td>
+      <td>On your device &amp; Apple Health (see §4)</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Coordinates used for UV/weather and for the walk trace during a session</td>
+      <td>On your device; coordinates sent to Apple WeatherKit to fetch weather (see §5)</td>
+    </tr>
+    <tr>
+      <td>Usage &amp; diagnostics</td>
+      <td>Screen views, feature events, device model, OS version, app version, crash logs, and a random
+      app-instance identifier</td>
+      <td>Sent to Google Firebase (Analytics &amp; Crashlytics)</td>
+    </tr>
+    <tr>
+      <td>Purchases</td>
+      <td>Subscription status and entitlements (e.g. whether “Pro” is active)</td>
+      <td>Handled by Apple, RevenueCat &amp; Superwall (see §7)</td>
+    </tr>
+  </table>
+  <p>We do <strong>not</strong> collect your payment-card details. Apple processes all payments; we only
+  receive whether a subscription is active.</p>
+
+  <h2 id="use">3. How we use it</h2>
+  <ul>
+    <li>To calculate the UV index and recommend safe sun-exposure windows near you.</li>
+    <li>To record your sun sessions and estimate the vitamin D your body may have synthesized.</li>
+    <li>To draw the map and route summary for a recorded session.</li>
+    <li>To keep the app stable and diagnose crashes (diagnostics).</li>
+    <li>To understand which features are used so we can improve the app (aggregate analytics).</li>
+    <li>To manage your subscription and show the right paywall.</li>
+  </ul>
+  <p>We do not use your data for third-party advertising, and we do not sell your personal information.</p>
+
+  <h2 id="health">4. Apple Health (HealthKit)</h2>
+  <p>If you grant permission, SunWise:</p>
+  <ul>
+    <li><strong>Reads</strong> your time-in-daylight and UV exposure to compare planned sessions with the
+    daylight you actually got.</li>
+    <li><strong>Writes</strong> each completed session to Apple Health as a UV-exposure sample plus a
+    model-based vitamin&nbsp;D estimate.</li>
+  </ul>
+  <div class="callout">
+    Your Apple Health data stays in Apple Health on your device. We do <strong>not</strong> transmit it to
+    our servers or any third party, we do <strong>not</strong> use it for advertising or marketing, and we
+    do <strong>not</strong> share it with data brokers. You can revoke Health access at any time in
+    <em>Settings › Privacy &amp; Security › Health › SunWise</em>. The vitamin&nbsp;D figure is an estimate,
+    not a medical measurement.
+  </div>
+
+  <h2 id="location">5. Location</h2>
+  <p>SunWise uses your location to fetch local weather and UV data and to compute the best sun times near
+  you. Your coordinates are sent to <strong>Apple WeatherKit</strong> to retrieve weather; Apple’s handling
+  is governed by Apple’s privacy policy.</p>
+  <p>While a vitamin&nbsp;D session is <em>actively recording</em>, SunWise records a background location
+  trace so the map and summary reflect the route you actually walked — even with the screen off. The trace
+  stops the moment the session ends. To protect your privacy, the start and end of the trace are cropped by
+  roughly 150&nbsp;metres so the route does not reveal your exact home or destination. Traces are stored on
+  your device. You can disable background location in <em>Settings › Privacy &amp; Security › Location
+  Services › SunWise</em>.</p>
+
+  <h2 id="camera">6. Camera &amp; photos</h2>
+  <p>SunWise uses the camera to scan your skin tone and, optionally, to track tan progress. These images are
+  analyzed <strong>on your device</strong>. Progress photos and skin-tone scans stay on your device and are
+  <strong>only</strong> uploaded if you explicitly opt in to anonymously help improve SunWise. If you opt in,
+  images are used solely to improve our skin-tone models and are not linked to your identity. You can decline,
+  and you can revoke camera and photo access in iOS Settings at any time.</p>
+
+  <h2 id="sharing">7. Who we share with</h2>
+  <p>We use the following service providers, each under their own privacy terms:</p>
+  <table>
+    <tr><th>Provider</th><th>Purpose</th><th>Policy</th></tr>
+    <tr><td>Apple</td><td>WeatherKit, HealthKit, App Store payments (StoreKit)</td>
+      <td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+    <tr><td>Google Firebase</td><td>Analytics &amp; Crashlytics (usage and crash diagnostics)</td>
+      <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>RevenueCat</td><td>Subscription management &amp; entitlements</td>
+      <td><a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></td></tr>
+    <tr><td>Superwall</td><td>Paywall presentation &amp; conversion analytics</td>
+      <td><a href="https://superwall.com/privacy">superwall.com/privacy</a></td></tr>
+  </table>
+  <p>We may also disclose information if required by law, or to protect the rights, safety, or property of
+  our users or SunWise.</p>
+
+  <h2 id="retention">8. Retention</h2>
+  <p>On-device data (profile, scans, journal, session history, traces) is kept until you delete it or delete
+  the app. Deleting SunWise removes on-device data; data written to Apple Health remains in Apple Health
+  until you remove it there. Diagnostic and analytics data held by Firebase is retained per Google’s default
+  retention settings. Subscription records are retained by Apple and RevenueCat as needed to provide the
+  service and meet legal obligations.</p>
+
+  <h2 id="rights">9. Your choices &amp; rights</h2>
+  <ul>
+    <li><strong>Analytics:</strong> you can opt out of analytics and diagnostics collection in the app’s
+    settings; when disabled, SunWise stops sending events to Firebase.</li>
+    <li><strong>Permissions:</strong> revoke Location, Health, Camera, Photos, or Notifications any time in
+    iOS Settings.</li>
+    <li><strong>Deletion:</strong> delete the app to remove on-device data; remove Health samples in the
+    Health app.</li>
+    <li><strong>Access / erasure requests:</strong> depending on where you live (e.g. the EU/EEA under GDPR,
+    or California under the CCPA/CPRA), you may have the right to access, correct, delete, or restrict use of
+    your personal data, and to object to certain processing. Email
+    <a href="mailto:akca.dev@gmail.com">akca.dev@gmail.com</a> and we will respond as required by law.</li>
+  </ul>
+
+  <h2 id="children">10. Children</h2>
+  <p>SunWise is not directed to children under 13 (or the minimum age of digital consent in your country),
+  and we do not knowingly collect personal data from them. If you believe a child has provided us data,
+  contact us and we will delete it.</p>
+
+  <h2 id="security">11. Security &amp; international transfers</h2>
+  <p>We rely on Apple’s on-device security and our providers’ safeguards to protect your data. No method of
+  storage or transmission is 100% secure. Our providers (Apple, Google, RevenueCat, Superwall) may process
+  data in the United States and other countries; where required, they rely on appropriate safeguards such as
+  Standard Contractual Clauses for international transfers.</p>
+
+  <h2 id="changes">12. Changes &amp; contact</h2>
+  <p>We may update this policy from time to time. Material changes will be reflected by updating the “Last
+  updated” date above and, where appropriate, an in-app notice. Questions or requests:
+  <a href="mailto:akca.dev@gmail.com">akca.dev@gmail.com</a>.</p>
+
+  <footer class="muted">
+    © 2026 SunWise. &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a>
+  </footer>
+</div>
+</body>
+</html>

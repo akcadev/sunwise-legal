@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SunWise — Legal</title>
+<style>
+  :root { --bg:#f6f6f8; --panel:#fff; --text:#1a1a1e; --muted:#5a5a66; --line:#e4e4ea; --accent:#d98a00; --link:#b56f00; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c0c0f; --panel:#16161b; --text:#ececf1; --muted:#a0a0ad; --line:#26262e; --accent:#ffb000; --link:#ffc74d; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    min-height:100vh; display:grid; place-items:center; padding:24px; }
+  .card { max-width:440px; width:100%; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:20px; letter-spacing:-0.01em; margin-bottom:6px; }
+  .dot { width:24px; height:24px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%,#ffd76a,var(--accent)); flex:none; }
+  p { color:var(--muted); margin:0 0 22px; }
+  a.row { display:flex; justify-content:space-between; align-items:center; text-decoration:none;
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:16px 18px; margin:10px 0; color:var(--text); font-weight:600; transition:border-color .15s; }
+  a.row:hover { border-color:var(--accent); }
+  a.row span.arrow { color:var(--accent); }
+  footer { margin-top:20px; font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand"><span class="dot"></span> SunWise</div>
+    <p>Legal documents for the SunWise iOS app.</p>
+    <a class="row" href="privacy.html">Privacy Policy <span class="arrow">→</span></a>
+    <a class="row" href="terms.html">Terms of Use <span class="arrow">→</span></a>
+    <footer>© 2026 SunWise</footer>
+  </div>
+</body>
+</html>
