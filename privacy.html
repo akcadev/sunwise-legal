@@ -46,12 +46,22 @@
   th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
   th { background: var(--panel); }
   footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; }
+  .nav { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  .nav a { text-decoration: none; font-size: 14px; font-weight: 600; color: var(--text);
+    background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 7px 15px; transition: border-color .15s; }
+  .nav a:hover { border-color: var(--accent); }
+  .nav a.active { border-color: var(--accent); color: var(--accent); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div class="brand"><span class="dot"></span> SunWise</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html" class="active">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
   </header>
 
   <h1>Privacy Policy</h1>
