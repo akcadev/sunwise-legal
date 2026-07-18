@@ -55,14 +55,16 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 16 July 2026 &nbsp;·&nbsp; Effective: 16 July 2026</p>
+  <p class="meta">Last updated: 18 July 2026 &nbsp;·&nbsp; Effective: 18 July 2026</p>
 
   <div class="callout">
-    <strong>The short version.</strong> SunWise has no accounts and no login. Almost everything —
-    your skin-tone scans, tan-journal photos, and Apple Health data — stays on your iPhone. We collect
-    anonymous usage and crash diagnostics to keep the app working, and we use Apple, Google Firebase,
-    RevenueCat, and Superwall as service providers. We never sell your data, and we never use your
-    Apple Health data for advertising.
+    <strong>The short version.</strong> SunWise has no accounts and no login. Your skin-tone scans,
+    any camera frames that capture your face, and your tan-journal photos are processed and stored
+    <strong>only on your iPhone</strong> — they are never uploaded to our servers and never shared with
+    anyone. Your Apple Health data also stays on your device. We collect anonymous usage and crash
+    diagnostics to keep the app working, and we use Apple, Google Firebase, RevenueCat, and Superwall
+    as service providers. We never sell your data, and we never use your Apple Health or face data for
+    advertising.
   </div>
 
   <div class="toc">
@@ -72,7 +74,7 @@
       <li><a href="#use">How we use it</a></li>
       <li><a href="#health">Apple Health (HealthKit)</a></li>
       <li><a href="#location">Location</a></li>
-      <li><a href="#camera">Camera &amp; photos</a></li>
+      <li><a href="#camera">Camera, photos &amp; face data</a></li>
       <li><a href="#sharing">Who we share with</a></li>
       <li><a href="#retention">Retention</a></li>
       <li><a href="#rights">Your choices &amp; rights</a></li>
@@ -99,14 +101,14 @@
       <td>On your device</td>
     </tr>
     <tr>
-      <td>Skin-tone scans</td>
-      <td>Camera frames analyzed to estimate your skin tone</td>
-      <td>Analyzed on your device; not uploaded unless you opt in (see §6)</td>
+      <td>Skin-tone scans (incl. face data)</td>
+      <td>Camera frames — which may include your face — analyzed in real time to estimate your skin tone</td>
+      <td>Processed on your device only; never stored as images, never uploaded, never shared (see §6)</td>
     </tr>
     <tr>
       <td>Tan-journal photos</td>
       <td>Progress photos you choose to attach</td>
-      <td>On your device; not uploaded unless you opt in</td>
+      <td>On your device only; never uploaded, never shared (see §6)</td>
     </tr>
     <tr>
       <td>Session &amp; health data</td>
@@ -171,12 +173,33 @@
   your device. You can disable background location in <em>Settings › Privacy &amp; Security › Location
   Services › SunWise</em>.</p>
 
-  <h2 id="camera">6. Camera &amp; photos</h2>
-  <p>SunWise uses the camera to scan your skin tone and, optionally, to track tan progress. These images are
-  analyzed <strong>on your device</strong>. Progress photos and skin-tone scans stay on your device and are
-  <strong>only</strong> uploaded if you explicitly opt in to anonymously help improve SunWise. If you opt in,
-  images are used solely to improve our skin-tone models and are not linked to your identity. You can decline,
-  and you can revoke camera and photo access in iOS Settings at any time.</p>
+  <h2 id="camera">6. Camera, photos &amp; face data</h2>
+  <p>SunWise uses the camera for two things: to scan your skin tone, and, optionally, to let you attach
+  progress photos to your tan journal. Every image involved — including any camera frame that captures your
+  face during a skin-tone scan — is captured and processed <strong>entirely on your device</strong>.</p>
+
+  <div class="callout">
+    <strong>Face data.</strong> When you run a skin-tone scan, the camera preview may include your face.
+    <ul>
+      <li><strong>What we collect:</strong> live camera frames used only to estimate a single skin-tone
+      value (on the Monk scale). We do <strong>not</strong> build a face template, run facial recognition,
+      or attempt to identify or authenticate you.</li>
+      <li><strong>How it is used:</strong> frames are analyzed in real time, on your device, solely to
+      compute your skin-tone estimate.</li>
+      <li><strong>Storage &amp; retention:</strong> skin-tone scan frames are <strong>not saved as
+      images</strong>. They are held only transiently in memory during the scan and discarded immediately
+      afterwards; only the resulting skin-tone value is kept, on your device.</li>
+      <li><strong>Sharing:</strong> face data and scan frames are <strong>never uploaded</strong> to our
+      servers and are <strong>never shared</strong> with any third party.</li>
+      <li><strong>Deletion:</strong> because no scan images are stored, there is nothing to delete; the
+      derived skin-tone value is removed when you change it in the app or delete the app.</li>
+    </ul>
+  </div>
+
+  <p><strong>Tan-journal photos.</strong> Progress photos you choose to attach are stored <strong>only on
+  your device</strong>, inside the app. They are never uploaded to our servers and never shared with any
+  third party. They remain on your device until you delete the photo, delete the journal entry, or delete
+  the app. You can revoke camera and photo access in iOS Settings at any time.</p>
 
   <h2 id="sharing">7. Who we share with</h2>
   <p>We use the following service providers, each under their own privacy terms:</p>

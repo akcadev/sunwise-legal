@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SunWise — Legal</title>
+<title>SunWise — Support &amp; Legal</title>
 <style>
   :root { --bg:#f6f6f8; --panel:#fff; --text:#1a1a1e; --muted:#5a5a66; --line:#e4e4ea; --accent:#d98a00; --link:#b56f00; }
   @media (prefers-color-scheme: dark) {
@@ -13,26 +13,43 @@
   body { margin:0; background:var(--bg); color:var(--text);
     font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     min-height:100vh; display:grid; place-items:center; padding:24px; }
-  .card { max-width:440px; width:100%; }
+  .card { max-width:460px; width:100%; }
   .brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:20px; letter-spacing:-0.01em; margin-bottom:6px; }
   .dot { width:24px; height:24px; border-radius:50%;
     background:radial-gradient(circle at 35% 30%,#ffd76a,var(--accent)); flex:none; }
-  p { color:var(--muted); margin:0 0 22px; }
+  p { color:var(--muted); margin:0 0 18px; }
+  h2 { font-size:15px; letter-spacing:.02em; text-transform:uppercase; color:var(--muted); margin:28px 0 10px; }
   a.row { display:flex; justify-content:space-between; align-items:center; text-decoration:none;
     background:var(--panel); border:1px solid var(--line); border-radius:12px;
     padding:16px 18px; margin:10px 0; color:var(--text); font-weight:600; transition:border-color .15s; }
   a.row:hover { border-color:var(--accent); }
   a.row span.arrow { color:var(--accent); }
-  footer { margin-top:20px; font-size:13px; color:var(--muted); }
+  .support { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:10px 0; }
+  .support p { margin:0 0 10px; color:var(--text); }
+  .support p:last-child { margin-bottom:0; }
+  .support a { color:var(--link); font-weight:600; }
+  .label { color:var(--muted); font-weight:600; }
+  footer { margin-top:24px; font-size:13px; color:var(--muted); }
 </style>
 </head>
 <body>
   <div class="card">
     <div class="brand"><span class="dot"></span> SunWise</div>
-    <p>Legal documents for the SunWise iOS app.</p>
+    <p>Track UV exposure, plan safe sun sessions, and estimate vitamin&nbsp;D — for iPhone.</p>
+
+    <h2>Support &amp; contact</h2>
+    <div class="support">
+      <p>Need help, have a question, or want to report a problem with SunWise? We're happy to help.</p>
+      <p><span class="label">Email:</span> <a href="mailto:raterateam@gmail.com?subject=SunWise%20Support">raterateam@gmail.com</a></p>
+      <p><span class="label">Response time:</span> we usually reply within 2&nbsp;business days.</p>
+      <p><span class="label">Managing your subscription:</span> open the iOS <em>Settings</em> app › tap your name › <em>Subscriptions</em> › <em>SunWise</em> to change or cancel.</p>
+    </div>
+
+    <h2>Legal</h2>
     <a class="row" href="privacy.html">Privacy Policy <span class="arrow">→</span></a>
     <a class="row" href="terms.html">Terms of Use <span class="arrow">→</span></a>
-    <footer>© 2026 SunWise</footer>
+
+    <footer>© 2026 SunWise · Ratera Yazılım ve Bilişim A.Ş.</footer>
   </div>
 </body>
 </html>
